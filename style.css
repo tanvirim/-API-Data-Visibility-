@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif ;
+  }
+  
+  .container {
+    width: 100%;
+    height: 100vh;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    
+  }
+  
+  .calendar {
+   font-size: 15px;
+    width: 50rem;
+    height: 25rem;
+    background-color: #ffffff;
+   
+  }
+  
+  .days {
+  
+    display: flex;
+    flex-wrap: wrap;
+  
+  }
+  
+  .days div {
+    border: 0.1rem solid rgb(74, 65, 65);
+    width: calc(50rem / 10);
+    height: 4rem;
+    display:flex ;
+   text-align: end; 
+    justify-content:center;
+    align-items: center;
+  }
+  
+  .days div:hover:not(.today) {
+    background-color: #87e2ee;
+    cursor: pointer;
+  }
+  
+  .today {
+    background-color: #7296e3;
+  }
+
+
+
+.container {
+  width: 100%;
+  height: 100vh;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  
+}
+
+.calendar {
+ 
+  width: 50rem;
+  height: 25rem;
+  background-color: #9eeb9d;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+}
+
+
+.month {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  display:flex;
+  align-items: center;
+  
+}
+
+.days div {
+  border: 0.1rem solid rgb(74, 65, 65);
+  width: calc(50rem / 10);
+  height: 4rem;
+  display:flex ;
+ text-align: end; 
+  justify-content:center;
+  align-items: center;
+ 
+
+}
+
+.days div:hover:not(.today) {
+  background-color: #87e2ee;
+  cursor: pointer;
+}
+
+.today {
+  background-color: #7296e3;
+}
+ 
+.days {
+    justify-content:flex-start !important;
+    align-items: center !important;
+    padding-inline-start: 10px;
+
+overflow:auto;
+
+}
